@@ -1,11 +1,11 @@
-# ORBSLAM2_ROS_NOETIC
+# ORB-SLAM2 for ROS Noetic, Ubuntu 20
 ORBSLAM2 adapted for Ubuntu 20 and ROS Noetic if neccesary.
 
 ***NOTE 1: THIS VERSION SAVE POINTS CLOUD MAP AFTER MONOCULAR ROS FINISH, AT PATH WHERE YOU RUN ROS NODE, "CloudMapROS.xyz" AND "KeyFrameTrajectory.txt" FILES. YOU CAN CHANGE THIS AT ORB_SLAM2_NOETIC/Examples/ROS/ORB_SLAM2/src/ros_mono.cc IN LINE 123.***
 
 ***NOTE 1.1: IF CHANGE POINTS CLOUD MAP PATH, YOU NEED TO REBUILD ROS PACKAGE .***
 
-### Install modified Pangolin ###
+# Install modified Pangolin
 I added Pangolin version compatible with Ubuntu 20 and ORB_SLAM2, so, we need to install it.
 
 === Required Dependencies ===
