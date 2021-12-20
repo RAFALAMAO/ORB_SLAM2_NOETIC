@@ -117,10 +117,10 @@ int main(int argc, char **argv)
     SLAM.Shutdown();
 
     // Save camera trajectory
-    // SLAM.SaveKeyFrameTrajectoryTUM("/home/aaron/ORB_SLAM2/datosGenerados/KeyFrameTrajectory.txt");
+    SLAM.SaveKeyFrameTrajectoryTUM("KeyFrameTrajectory.txt");
 
     // Save the pointcloud       
-    SLAM.SaveCloudMap("/home/aaron/ORB_SLAM2/datosGenerados/MapaDePuntosROS.xyz");    
+    SLAM.SaveCloudMap("CloudMapROS.xyz");    
 
     ros::shutdown();
 

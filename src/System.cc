@@ -423,10 +423,10 @@ void System::SaveKeyFrameTrajectoryTUM(const string &filename)
         cv::Mat R = pKF->GetRotation().t();
         vector<float> q = Converter::toQuaternion(R);
         cv::Mat t = pKF->GetCameraCenter();
-        //f << setprecision(6) << pKF->mTimeStamp << setprecision(7) << ", " << t.at<float>(0) << ", " << t.at<float>(1) << ", " << t.at<float>(2)
-        //<< ", " << q[0] << ", " << q[1] << ", " << q[2] << ", " << q[3] << endl;
+        f << setprecision(6) << pKF->mTimeStamp << setprecision(7) << ", " << t.at<float>(0) << ", " << t.at<float>(1) << ", " << t.at<float>(2)
+        << ", " << q[0] << ", " << q[1] << ", " << q[2] << ", " << q[3] << endl;
 
-        f << setprecision(6) << t.at<float>(0) << ", " << t.at<float>(1) << ", " << t.at<float>(2)*-1 << endl;
+        //f << setprecision(6) << t.at<float>(0) << ", " << t.at<float>(1) << ", " << t.at<float>(2)*-1 << endl;
 
     }
 
@@ -451,14 +451,16 @@ void System::SaveCloudMap(const string &filename)
     if(vpMPs.empty())
         return;       
 
-    // for(size_t i=0, iend=vpMPs.size(); i<iend;i++)
-    // {
-    //     if(vpMPs[i]->isBad() || spRefMPs.count(vpMPs[i]))
-    //         continue;
-    //     cv::Mat pos = vpMPs[i]->GetWorldPos();        
-    //     f << setprecision(6) << pos.at<float>(0) << " " <<  pos.at<float>(1) << " " <<  pos.at<float>(2) << endl ;
-    // }
+    // Local map
+    for(size_t i=0, iend=vpMPs.size(); i<iend;i++)
+    {
+        if(vpMPs[i]->isBad() || spRefMPs.count(vpMPs[i]))
+            continue;
+        cv::Mat pos = vpMPs[i]->GetWorldPos();        
+        f << setprecision(6) << pos.at<float>(0) << " " <<  pos.at<float>(1) << " " <<  pos.at<float>(2) << endl ;
+    }
 
+    // Global map
     for(set<MapPoint*>::iterator sit=spRefMPs.begin(), send=spRefMPs.end(); sit!=send; sit++)
     {
         if((*sit)->isBad())
