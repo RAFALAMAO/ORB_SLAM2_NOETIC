@@ -8,7 +8,7 @@ ORBSLAM2 adapted for Ubuntu 20 and ROS Noetic if neccesary.
 ### Install modified Pangolin ###
 I added Pangolin version compatible with Ubuntu 20 and ORB_SLAM2, so, we need to install it.
 
-*** Required Dependencies ***
+=== Required Dependencies ===
 
 * C++11
 
@@ -24,7 +24,7 @@ I added Pangolin version compatible with Ubuntu 20 and ORB_SLAM2, so, we need to
  * (deb) sudo apt-get install cmake
  * (mac) sudo port install cmake
 
-## Building ##
+=== Building ===
 
 1. Enter Pangolin path
     * cd ORB_SLAM2_NOETIC/Pangolin
