@@ -43,4 +43,4 @@ I added Pangolin version compatible with Ubuntu 20 and ORB_SLAM2, so, we need to
 I added ORB_SLAM2 version compatible with Ubuntu 20 and ORB_SLAM2, so, for install and use just follow official steps at: https://github.com/raulmur/ORB_SLAM2
 
 # My test video:
-* https://github.com/RAFALAMAO/ORB_SLAM2_NOETIC
+* https://youtu.be/_syAilCknT4
