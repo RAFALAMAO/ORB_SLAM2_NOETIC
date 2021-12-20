@@ -1,5 +1,7 @@
 CMakeLists.txt.user
-Pangolin/
+Pangolin/build
+ConfigDron/
+datosGenerados/
 powercrust/target/
 eigen/
 Examples/Monocular/mono_euroc
