@@ -29,9 +29,10 @@ I added Pangolin version compatible with Ubuntu 20 and ORB_SLAM2, so, we need to
 1. Enter Pangolin path
     * cd ORB_SLAM2_NOETIC/Pangolin
 2. Build Pangolin
-    * cmake
+    * mkdir build
+    * cd build
     * cmake ..
-    * cmake --build .
+    * make -j
 
 3. Test Pangolin
     * cd ORB_SLAM2_NOETIC/Pangolin/examples/HelloPangolin
