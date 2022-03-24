@@ -1,8 +1,6 @@
 CMakeLists.txt.user
-ConfigDron/
 Pangolin/build
 powercrust/target/
-datosGenerados/
 eigen/
 Examples/Monocular/mono_euroc
 Examples/Monocular/mono_kitti

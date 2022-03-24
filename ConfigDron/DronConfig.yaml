@@ -1,0 +1,118 @@
+%YAML:1.0
+
+#--------------------------------------------------------------------------------------------
+# Camera Parameters. Adjust them!
+#--------------------------------------------------------------------------------------------
+
+# Camera calibration and distortion parameters (OpenCV) 
+
+#######Parametros carrito bueno 
+#Camera.fx: 333.79544315
+#Camera.fy: 305.15116515
+#Camera.cx: 327.64126358
+#Camera.cy: 184.33283913
+
+#Camera.k1: -0.32926792
+#Camera.k2: 0.10339377
+#Camera.p1: 0.03420154
+#Camera.p2: -0.00167815
+#Camera.k3: -0.0164104
+
+#######Parametros carrito FINAL ULTRA
+#Camera.fx: 362.93852557
+#Camera.fy: 361.5592161
+#Camera.cx: 315.20238961
+#Camera.cy: 236.53136665
+
+#Camera.k1: -3.47457111e-01
+#Camera.k2: 1.92839440e-01
+#Camera.p1: 3.31654283e-04
+#Camera.p2: -1.89109119e-03
+#Camera.k3: -8.48757074e-02
+
+#######Parametros SIMULACION
+# Camera.fx: 530.4669406576809
+# Camera.fy: 530.4669406576809
+# Camera.cx: 320.5
+# Camera.cy: 240.5
+
+# Camera.k1: 0
+# Camera.k2: 0
+# Camera.p1: 0
+# Camera.p2: 0
+# Camera.k3: 0
+
+#######Parametros default
+# Camera.fx: 517.306408
+# Camera.fy: 516.469215
+# Camera.cx: 318.643040
+# Camera.cy: 255.313989
+# Camera.k1: 0.262383
+# Camera.k2: -0.953104
+# Camera.p1: -0.005358
+# Camera.p2: 0.002628
+# Camera.k3: 1.163314
+
+#######Parametros Dron
+Camera.fx: 319.9988245765257
+Camera.fy: 319.9988245765257
+Camera.cx: 320.5
+Camera.cy: 240.5
+Camera.k1: 0.0
+Camera.k2: -0.0
+Camera.p1: -0.0
+Camera.p2: 0.0
+Camera.k3: 0.0
+
+#######Parametros USB 
+#Camera.fx: 1309.31768
+#Camera.fy: 1314.04004
+#Camera.cx: 632.915886
+#Camera.cy: 352.799133
+
+#Camera.k1: 0.0414126180
+#Camera.k2: 0.180142054
+#Camera.p1: -0.000741480943
+#Camera.p2: 0.00583799059
+#Camera.k3: -1.76531228
+
+# Camera frames per second 
+Camera.fps: 25 #25 en linea
+
+# Color order of the images (0: BGR, 1: RGB. It is ignored if images are grayscale)
+Camera.RGB: 1
+
+#--------------------------------------------------------------------------------------------
+# ORB Parameters
+#--------------------------------------------------------------------------------------------
+
+# ORB Extractor: Number of features per image
+ORBextractor.nFeatures: 1500
+
+# ORB Extractor: Scale factor between levels in the scale pyramid 	
+ORBextractor.scaleFactor: 1.2
+
+# ORB Extractor: Number of levels in the scale pyramid	
+ORBextractor.nLevels: 8
+
+# ORB Extractor: Fast threshold
+# Image is divided in a grid. At each cell FAST are extracted imposing a minimum response.
+# Firstly we impose iniThFAST. If no corners are detected we impose a lower value minThFAST
+# You can lower these values if your images have low contrast			
+ORBextractor.iniThFAST: 20
+ORBextractor.minThFAST: 7
+
+#--------------------------------------------------------------------------------------------
+# Viewer Parameters
+#--------------------------------------------------------------------------------------------
+Viewer.KeyFrameSize: 0.05
+Viewer.KeyFrameLineWidth: 1
+Viewer.GraphLineWidth: 0.9
+Viewer.PointSize:2
+Viewer.CameraSize: 0.08
+Viewer.CameraLineWidth: 3
+Viewer.ViewpointX: 0
+Viewer.ViewpointY: -0.7
+Viewer.ViewpointZ: -1.8
+Viewer.ViewpointF: 500
+
