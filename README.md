@@ -36,12 +36,16 @@ I added Pangolin version compatible with Ubuntu 20 and ORB_SLAM2, so, we need to
 
 3. Test Pangolin
     * cd ORB_SLAM2_NOETIC/Pangolin/examples/HelloPangolin
-    * cmake -f CMakeLists.txt
-    * cmake
+    * mkdir build
+    * cd build
+    * cmake ..
+    * make -j
     * ./HelloPangolin
 
 # Install ORB_SLAM2
-I added ORB_SLAM2 version compatible with Ubuntu 20 and ORB_SLAM2, so, for install and use just follow official steps at: https://github.com/raulmur/ORB_SLAM2
+I added ORB_SLAM2 version compatible with Ubuntu 20 and ORB_SLAM2, so, for install and use just follow official steps at: https://github.com/raulmur/ORB_SLAM2 (except clone official ORBSLAM2)
 
-# My test video:
-* https://youtu.be/_syAilCknT4
+# Test:
+Here is a [video](https://youtu.be/_syAilCknT4) testing it:
+
+[![IMAGE ALT TEXT HERE](/images/ORB_SLAM2.gif)](https://youtu.be/_syAilCknT4)
