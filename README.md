@@ -1,6 +1,12 @@
 # ORB-SLAM2 for ROS Noetic, Ubuntu 20
 
-[![IMAGE ALT TEXT HERE](/images/ORB_SLAM2.gif)](https://youtu.be/_syAilCknT4)
+<p align="center">
+  <img
+    width="500"
+    height="500"
+    src="/images/ORB_SLAM2.gif"
+  >
+</p>
 
 ORBSLAM2 adapted for Ubuntu 20 and ROS Noetic if neccesary.
 
